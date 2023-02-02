@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Jekyll v2.5.3">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	
+	<!-- AUTHOR & DESCRIPTION -->
+	<meta name="author" content="{{site.author}}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- FONTS -->
+  <link href="{{ "/libs/font-awesome/font-awesome-4.2.0/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Fenix|Montserrat|Playfair+Display:700italic,400italic' rel='stylesheet' type='text/css'>
+
+  {% if page.title == "Contact Me" %}
+  <!-- CSS CONTACT FORM -->
+  <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/contact-form.css" | prepend: site.baseurl }}">
+	{% endif %}
+
+	<!-- CSS CUSTOM -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.min.js"></script>
+  <![endif]-->
+</head>

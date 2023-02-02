@@ -1,0 +1,23 @@
+<header>
+	<a href="{{ site.baseurl | prepend: site.url  }}">
+		<h1 id="main-title">{{ site.title }}</h1>
+	  <h2 id="main-subtitle">{{ site.sub_title }}</h2>
+	</a>
+
+</header>
+
+<nav id="main-nav" role="navigation">
+
+	{% assign pages = site.pages | sort:'nav_bar_pos' %}
+	{% for node in pages %}
+		{% if node.title and node.page_type != 'portfolio item' %}
+			{% capture nav_item_name %}{{ node.url | remove:'/' | remove:'index.html' }}{% endcapture %}
+    	{% if page.url == node.url %}
+      	<a class="selected">{{ nav_item_name }}</a>
+    	{% else %}
+      	<a href="{{ "/" | append: nav_item_name | prepend: site.baseurl }}">{{ nav_item_name }}</a>
+    	{% endif %}
+    {% endif %}
+  {% endfor %}
+
+</nav>

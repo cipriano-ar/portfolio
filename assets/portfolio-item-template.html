@@ -1,0 +1,37 @@
+<!-- ---
+layout: regular
+page_type: portfolio item
+title: Project title
+sub_title:
+item_url:
+description: REMEMBER TO PLACE DESCRIPTION FOR SEO.
+--- -->
+
+<section class="page-content clearfix">
+	<div class="one-half first">
+
+		<!-- PROJECT TITLE -->
+		{% include section-header.html %}
+
+		<!-- PROJECT SCREENSHOT -->
+		
+		<img src="{{"/images/portfolio/list/sj-list.png" | prepend: site.baseurl}}" alt="" />
+
+		<!-- SLIDER CONTROLS -->
+		<p><b>Client:</b> Yoobee Web Bootcamp.</p>
+		<p><b>Date:</b> November 2014.</p>
+		<p><a href="{{page.item_url | prepend: site.baseurl}}" target="_blank">Visit Website</a></p>
+
+	</div>
+
+	<div class="one-half last">
+		<header class="section-header">
+		  <h3 class="section-title">Project Description</h3>
+		</header>
+
+		<!-- PROJECT DESCRIPTION -->
+		<p class="skills">This is the project description.</p>
+	  <p class="skills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi saepe, repellendus minima consequatur labore quia cumque fuga itaque incidunt alias magnam voluptates aliquam laborum dolore debitis tempora voluptatibus, magni possimus!.</p>
+	  
+	</div>
+</section>

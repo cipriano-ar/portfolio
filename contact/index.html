@@ -1,0 +1,49 @@
+---
+layout: regular
+title: Contact Me
+sub_title: I'm a nice guy
+description: REMEMBER TO PLACE DESCRIPTION.
+nav_bar_pos: 4
+---
+
+<section class="page-content clearfix">
+
+	{% include section-header.html %}
+
+	<!-- CONTACT DETAILS -->
+	<div class="one-half first">
+		<p class="text-left">
+	  	<i class="fa fa-envelope main-color"></i>&nbsp;&nbsp;
+	  	<small><a href="mailto:{{site.title}}&nbsp;<{{site.email}}>">cmazzieri@gmail.com</a></small>
+	  </p>
+	  <p class="text-left">
+	  	<i class="fa fa-phone main-color"></i>&nbsp;&nbsp;
+	  	<small>021 179 1584</small>
+	  </p>
+	  <p class="text-left">
+	  	<i class="fa fa-home main-color"></i>&nbsp;&nbsp;
+	  	<small>Wanganui, New Zealand</small>
+	  </p>
+		<!-- SOCIAL ICONS -->
+		<ul class="social list-inline">
+	    <li>
+	      <a href="{{ site.my-github }}" target="_blank"><i class="fa fa-fw fa-github fa-2x" title="GitHub"></i></a>
+	    </li>
+	    <li>
+	      <a href="{{ site.my-linkedin }}" target="_blank"><i class="fa fa-fw fa-linkedin fa-2x"  title="LinkedIn"></i></a>
+	    </li>
+	    <li>
+	      <a href="{{ site.my-facebook }}" target="_blank"><i class="fa fa-fw fa-facebook fa-2x" title="Facebook"></i></a>
+	    </li>
+		</ul>
+	</div>
+
+	<!-- CONTACT FORM -->
+	<div class="one-half last">
+		{% include contact-form.html %}
+	</div>
+	<div class="clearfix"></div>
+
+	<p></p>
+
+</section>
